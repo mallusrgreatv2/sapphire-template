@@ -16,28 +16,23 @@
     "discord.js": "^14.15.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.7.0",
+    "@eslint/js": "^9.9.1",
     "@sapphire/cli": "^1.9.3",
     "@sapphire/eslint-config": "^5.0.5",
     "@sapphire/ts-config": "^5.0.1",
-    "@types/node": "^20.14.12",
-    "@types/ws": "^8.5.11",
-    "eslint": "^9.7.0",
-    "globals": "^15.8.0",
+    "@types/node": "^20.16.3",
+    "@types/ws": "^8.5.12",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3",
-    "tsc-watch": "^6.2.0",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.17.0"
+    "typescript-eslint": "^7.18.0"
   },
   "scripts": {
-    "sapphire": "sapphire",
-    "generate": "sapphire generate",
-    "build": "tsc",
-    "watch": "tsc -w",
-    "start": "node dist/index.js",
-    "dev": "npm run build && npm run start",
-    "watch:start": "tsc-watch --onSuccess \"npm run start\"",
-    "format": "prettier --write \"src/\"",
+    "clean": "rimraf ./dist",
+    "build": "tsup ./src",
+    "start": "yarn build && node --no-warnings dist/index.js",
     "gen:env": "bun scripts/generate-env-example.js"
   }
 }
