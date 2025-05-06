@@ -2,25 +2,23 @@
 
 This is a basic setup of a Discord bot using the [sapphire framework](https://sapphirejs.dev) written in TypeScript
 
+Based on [with-tsup example](https://github.com/sapphiredev/examples/tree/main/examples/with-tsup)
+
 ## How to use it?
 
 ### Prerequisite
 
 ```sh
-bun install
+yarn install
 ```
 
 ### Development
 
-This example can be run with `tsc-watch` to watch the files and automatically restart your bot.
-
-```sh
-bun run watch:start
-```
+You can run the code in watch mode by running `yarn dev` to automatically restart your bot in case of any file changes.
 
 ### Production
 
-You can also run the bot with `bun dev`, this will first build your code and then run `node ./dist/index.js`. But this is not the recommended way to run a bot in production.
+You can use the shorthand `yarn start` which builds the files and starts the bot.
 
 ## License
 
