@@ -6,28 +6,28 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@sapphire/decorators": "^6.1.1",
+    "@sapphire/decorators": "^6.2.0",
     "@sapphire/discord.js-utilities": "7.3.2",
-    "@sapphire/framework": "^5.3.4",
-    "@sapphire/plugin-logger": "^4.0.2",
+    "@sapphire/framework": "^5.3.7",
+    "@sapphire/plugin-logger": "^4.1.0",
     "@sapphire/utilities": "^3.18.2",
-    "@skyra/env-utilities": "^2.0.0",
+    "@skyra/env-utilities": "^2.0.1",
     "colorette": "^2.0.20",
-    "discord.js": "^14.19.3"
+    "discord.js": "^14.24.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.26.0",
+    "@eslint/js": "^9.38.0",
     "@sapphire/cli": "^1.9.3",
-    "@sapphire/eslint-config": "^5.0.5",
+    "@sapphire/eslint-config": "^5.0.6",
     "@sapphire/ts-config": "^5.0.1",
-    "@types/node": "^22.15.12",
+    "@types/node": "^22.18.12",
     "@types/ws": "^8.18.1",
-    "eslint": "^9.9.1",
-    "globals": "^16.0.0",
-    "prettier": "^3.5.3",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.32.0"
+    "eslint": "^9.38.0",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
   },
   "scripts": {
     "clean": "rimraf ./dist",
